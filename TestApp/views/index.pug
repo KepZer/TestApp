@@ -1,0 +1,15 @@
+﻿doctype html
+html
+    head
+        title myTestApp
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        
+    body
+        label Введите имя пользователя: 
+
+        p
+            form(method="get" action="/check")
+                input(type='text' name='userName' value='')
+                button(type='submit') Проверить
+        p
+            label= title
